@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Java Joint Case Study</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-mobile">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">&#9776;</label>
+            <a href="index.html" class="logo-link">
+                <img src="images/lo-logo.png" alt="Lalin Ozyazgan logo" class="logo-img">
+            </a>
+            <div class="nav-mobile">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="work.html" class="nav-link">Work</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="java-container">
+        <section class="card" id="java-title">
+            <h1>The Java Joint</h1>
+            <img class="project-image" id="java-image" src="images/java-joint.png"
+                alt="A phone screen featuring the homepage of the Java Joint app">
+        </section>
+
+        <section class="card" id="project-overview">
+            <h2>Project Overview</h2>
+
+            <p>A full iteration process from research to prototype was completed over the span of several weeks with the
+                goal of developing a mobile application ordering platform for a fictitious coffee company, The Java
+                Joint.</p>
+
+            <ul class="java-overview">
+                <li><strong>Timeline:</strong> 6 weeks</li>
+                <li><strong>Role:</strong> UX Researcher & Product Designer</li>
+                <li><strong>Tools:</strong> Google Workspace, Canva, Figma, Miro</li>
+            </ul>
+
+        </section>
+        <section class="card" id="project-goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li>
+                    Mobile ordering is used in quickly moving, real-world contexts, and even small usability issues can
+                    cause friction, abandonment, or loss of trust.
+                </li>
+                <li>
+                    <strong>Objective: </strong>Identify high-impact usability barriers and design a simplified,
+                    intuitive ordering flow that maximizes task success and user confidence to create a frictionless
+                    mobile ordering experience.
+                </li>
+
+            </ul>
+        </section>
+        <section class="card" id="research">
+            <h2>User Research</h2>
+            <h3>Competitive Analysis</h3>
+            <p>The Java Joint operates in the premium “third-wave” coffee space alongside:</p>
+            <ul>
+                <li><strong>Blue Bottle: </strong>Minimalist, premium, sustainability-focused</li>
+                <li><strong>Stumptown: </strong>Direct-trade pioneer with bold and unique brand identity</li>
+                <li><strong>Intelligentsia: </strong>High-prestige, coffee-expert positioning</li>
+                <li><strong>La Colombe: </strong>Broader appeal with modern RTD innovation</li>
+            </ul>
+            <p>
+                These brands serve educated, high-income, urban customers who value specialty coffee, sustainability,
+                and quality.
+            </p>
+            <p>
+                The Java Joint needed a digital experience that matched the high standards of larger comparable coffee
+                companies, without adding complexity.
+            </p>
+            <h3>Target Users</h3>
+            <h4>Demographics</h4>
+            <ul>
+                <li>Urban professionals</li>
+                <li>High income, highly educated</li>
+                <li>Frequent coffee buyers</li>
+            </ul>
+            <h4>Psychographics</h4>
+            <ul>
+                <li>Value sustainability and traceability</li>
+                <li>Willing to pay for premium quality</li>
+                <li>Expect efficiency in daily routines</li>
+            </ul><br>
+            <p>Non-coffee drinkers were screened out.</p>
+        </section>
+
+        <section class="card" id="testing">
+            <h2>Usability Testing</h2>
+            <h3>Objectives</h3>
+            <p>Identify features that make mobile ordering:</p>
+            <ul>
+                <li>Efficient vs. inefficient</li>
+                <li>Easy vs. confusing</li>
+                <li>Attractive and confidence-building</li>
+            </ul>
+            <h3>Methods</h3>
+            <ul>
+                <li>Moderated remote usability testing</li>
+                <li>Think-aloud protocol</li>
+                <li>6 participants</li>
+                <li>Real-time observation + follow-up probing</li>
+            </ul>
+            <h3>Tasks</h3>
+            <p>Participants were asked to:</p>
+            <ul>
+                <li>Create an account</li>
+                <li>Find the closest café</li>
+                <li>Add, remove, and modify items in an order</li>
+                <li>Proceed to checkout</li>
+            </ul>
+            <h3>Metrics</h3>
+            <h4>Primary</h4>
+            <ul>
+                <li>Task completion rate</li>
+                <li>Error rate</li>
+            </ul>
+            <h4>Secondary</h4>
+            <ul>
+                <li>Time on task</li>
+                <li>Self-reported satisfaction</li>
+            </ul>
+        </section>
+
+        <section class="card" id="synthesis">
+            <h2>Research Synthesis</h2>
+            <ul>
+                <li>Reviewed recordings + moderator notes</li>
+                <li>Identified recurring breakdowns and patterns</li>
+                <li>Grouped behaviors across participants</li>
+                <li>Prioritized issues using a severity framework</li>
+            </ul>
+            <h3>Key Findings</h3>
+            <ul>
+                <li>Account requirement unclear: Users added items before realizing login was required.
+                </li>
+                <li>Store selection unintuitive: Users struggled to confidently identify the closest
+                    location.</li>
+                <li>Navigation friction: Difficulty moving backward between pages increased cognitive
+                    load and time on task.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="design">
+            <h2>Design</h2>
+            <p>Based on findings, the app was redesigned to:</p>
+            <ul>
+                <li>Introduce a clear welcome screen (Login / Sign Up / Guest Checkout)</li>
+                <li>Implement a more intuitive store finder experience</li>
+                <li>Add persistent back navigation and clearer return paths</li>
+                <li>Simplify instructions and reduce cognitive friction throughout the flow</li>
+            </ul>
+            <h3>Lo-Fi Wireframe</h3>
+            <img class="design-image" src="images/wireframe-combined.png"
+                alt="Four phone screens displaying the wireframes for the log in, cafe selection, menu, and product card pages">
+            <h3>Hi-Fi Prototype</h3>
+            <img class="design-image" src="images/java-joint-prototype.png"
+                alt="Four phone screens displaying the high fidelity prototypes for the log in, cafe selection, menu, and product card pages">
+        </section>
+
+        <section class="card" id="final-product">
+            <h2>Final Product</h2>
+            <a target="_blank"
+                href="https://www.figma.com/proto/mkVn9REWcQxCUblyUWXfbS/The-Java-Joint-App?node-id=1045-74&starting-point-node-id=1045%3A74&t=btq5uXUdBsVEw2gD-1"
+                class="button-link">View Final Prototype</a>
+        </section>
+        <section class="card" id="conclusions">
+            <h2>Conclusions</h2>
+            <p>
+                At first glance, the Blue Bottle mobile app seemed intentionally designed, with a minimal aesthetic that
+                fits the company’s brand, and features that align with user tasks for mobile ordering.
+            </p>
+            <p>
+                However, conducting user research led to the understanding that even well-designed apps can be improved.
+                It also highlighted the aspects of the mobile ordering experience that draw users in, like clear
+                organization, simple font and imagery, and easy navigation across pages.
+            </p>
+            <p>
+                The final prototypes for The Java Joint app reflect the needs and wants of users ordering coffee online,
+                allowing them to utilize guest checkout, and navigate the task flow without frustration.
+            </p>
+            <p>
+                Due to the nature of this as an individual academic project, I did not have all resources at my
+                disposal. If I had more time available, I would have conducted a usability evaluation on The Java
+                Joint’s app design itself and make design adjustments based on that data, with further iterations as
+                needed.
+            </p>
+        </section>
+    </main>
+
+    <p><a class="link-top" href="#top">Back to top</a></p>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <p>Thanks for stopping by!</p>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>
+            Connect with me <br>
+            <a href="https://www.linkedin.com/in/lalin-ozyazgan/" target="_blank" class="logo-link" id="linkedin">
+                <img src="images/linkedin-icon.png" alt="LinkedIn logo" class="logo-img">
+            </a>
+            <a href="mailto:lalinozyazgan@gmail.com">lalinozyazgan@gmail.com</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

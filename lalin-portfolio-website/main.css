@@ -1,0 +1,708 @@
+/* body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(238, 252, 241);
+    color: #273702;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #273702;
+}
+
+.button-link {
+    padding: 8px 12px;
+    border: none;
+    background-color: #273702;
+    color: rgb(242, 255, 145);
+    border-radius: 6px;
+}
+
+.button-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(178, 204, 204);
+    font-size: 16px;
+    color: rgb(2, 75, 75);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.header-mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.checkbtn {
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    z-index: 1000;
+}
+
+.checkbtn:active {
+    color: #6a9c82;
+}
+
+#check {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(178, 204, 204);
+    padding: 20px;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.nav-mobile a {
+    padding: 15px 0;
+    display: block;
+    text-align: left;
+}
+
+#check:checked~.nav-mobile {
+    display: flex;
+}
+
+.nav-menu {
+    display: none;
+}
+
+
+/*styling navigation*/
+
+.nav-menu a {
+    font-size: 18pt;
+    padding: 20px;
+}
+
+.nav-menu a:hover {
+    color: #456454;
+}
+
+/*Flexbox for mobile layout - one column */
+/*homepage styling*/
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 40px 20px;
+}
+
+.homepage .title p {
+    font-size: 35px;
+}
+
+#home-about h2 {
+    margin-bottom: 10px;
+}
+
+.card .my-headshot {
+    width: 10rem;
+    height: 10rem;
+}
+
+#home-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#home-about .button-link {
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgb(241, 249, 231);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1pt solid #6a9c82;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.card .about-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case-studies-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.case-studies-wrapper p {
+    text-align: center;
+}
+
+.case-studies-wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-1,
+#project-2,
+#project-3 {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-title:active {
+    color: #456454;
+}
+
+#case-studies {
+    margin-bottom: 40px;
+}
+
+/*about page styling*/
+.about-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#about-page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2fr;
+    align-items: center;
+}
+
+.about-heading {
+    margin: 40px;
+    font-size: 35px;
+}
+
+#about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+}
+
+#about-content h1 {
+    font-size: 45px;
+}
+
+.my-headshot {
+    display: block;
+    margin: 30px auto;
+}
+
+/*work page styling*/
+
+#my-work h1 {
+    margin-bottom: 40px;
+    font-size: 45px;
+}
+
+#my-work p {
+    text-align: center;
+}
+
+#work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#work-content a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#my-work {
+    max-width: 1200px;
+    box-sizing: border-box;
+    width: 90%
+}
+
+#java {
+    margin-bottom: 40px;
+}
+
+/* The Java Joint Page Styling*/
+
+#java-image {
+    width: 50%;
+    max-width: 300px;
+}
+
+.project-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.java-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.java-container p {
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.java-container ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.java-container ul li {
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.design-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+
+#final-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.link-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/*resume page styling*/
+
+#resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#resume {
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+#resume h1 {
+    font-size: 45px;
+
+}
+
+.resume-pdf {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-pdf embed {
+    width: 100%;
+    height: 22rem;
+}
+
+#resume-content .button-link {
+    margin: 20px auto 20px auto;
+}
+
+/*contact page styling*/
+.contact-page {
+    margin-left: 40px;
+    font-size: 45px;
+}
+
+h1.contact-page {
+    margin: 60px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.contact-form input[type=submit] {
+    margin-top: 40px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #273702;
+    ;
+    color: rgb(237, 248, 152);
+    border-radius: 6px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.contact-form input {
+    margin-bottom: 40px;
+}
+
+/*footer styling*/
+
+.footer {
+    width: 100%;
+    background-color: rgb(178, 204, 204);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* pushes text to the right */
+}
+
+.footer-links li {
+    list-style-type: none;
+}
+
+.footer-links a {
+    font-size: 12pt;
+    line-height: 30px;
+}
+
+.footer-links a:hover {
+    color: #6a9c82;
+}
+
+.footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#linkedin img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer p>a {
+    font-size: 12pt;
+    line-height: 35px;
+}
+
+.footer p>a:hover {
+    color: #6a9c82;
+}
+
+/*media query for medium screen */
+@media (min-width: 768px) {
+
+    * {
+        font-size: 24px;
+    }
+
+    .homepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .homepage .title {
+        grid-column: span 2;
+        margin-left: 40px;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .card {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    #home-about {
+        grid-column: span 2;
+        max-width: 700px;
+        margin: 40px auto;
+    }
+
+    #case-studies {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .case-studies-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-studies-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .case-studies-wrapper .project-image {
+        height: auto;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .about-buttons {
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .button-link {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .resume-pdf embed {
+        width: 100%;
+        height: 18rem;
+    }
+
+    #java-image {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .design-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-links a {
+        font-size: 16pt;
+    }
+
+    .footer p>a {
+        font-size: 16pt;
+    }
+}
+
+/*media query for large screen*/
+@media (min-width: 1200px) {
+    /*TEST ON EVEN LARGER SCREEN!!!*/
+
+    * {
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .homepage {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    #home-about {
+        grid-column: span 2;
+        max-width: 1100px;
+        margin: 40px auto;
+    }
+
+    #case-studies {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .case-studies-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-studies-wrapper .project-image {
+        height: auto;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .about-page .about-heading {
+        margin-top: 50px;
+    }
+
+    .about-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .resume-pdf embed {
+        width: 100%;
+        height: 36rem;
+    }
+
+    #resume-content .button-link {
+        margin-bottom: 40px;
+    }
+
+    .design-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .java-container h1 {
+        margin-top: 50px;
+    }
+
+    .java-container p {
+        line-height: 60px;
+        margin-bottom: 40px;
+    }
+
+    .java-container ul {
+        margin-bottom: 40px;
+        padding-left: 30px;
+        line-height: 60px;
+    }
+
+    .java-container ul li {
+        margin-bottom: 30px;
+        line-height: 50px;
+
+    }
+
+    .footer-links a {
+        font-size: 18pt;
+    }
+
+    .footer p>a {
+        font-size: 18pt;
+    }
+}

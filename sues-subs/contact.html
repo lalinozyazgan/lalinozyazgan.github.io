@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Restaurant Contact</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="hamburger">☰</nav>
+        <a href="index.html" class="logo-link">
+            <img src="images/sue-logo.png" alt="Sue's Sub Logo featuring the restaurant name and sub graphic"
+                class="logo-img">
+        </a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="contact-head">
+        <h1>Have Questions?</h1>
+        <h2>Get in Touch with our Team!</h2>
+        <div class="contact-page">
+            <div class="contact-img">
+                <img src="images/sandwich-worker.jpg"
+                    alt="Girl in a red apron holding lettuce, making a sandwich behind a deli counter">
+            </div>
+            <form class="contact-form" method="POST">
+                <div class="name-row">
+                    <div class="first-name">
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="name" required><br><br>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="text" id="last-name" name="name" required><br><br>
+                    </div>
+                </div>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>
+            Connect with us
+            <br>
+            <a href="mailto:suessubs@gmail.com">suessubs@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
